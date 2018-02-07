@@ -2,7 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-
+body{
+    height: 100%;
+    background: #39CCCC;
+}
 .navbar{
     height: 100%;
     position: fixed;
@@ -22,7 +25,7 @@
 }
 
 .navbar ul>li>a{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Pacifico', cursive;
     display: block;
     text-decoration: none;
     padding: 20px 30px 20px 30px;
@@ -36,7 +39,7 @@
 }
 
 .navbar ul>li>a:hover{
-    background: #ccc;
+    background: #39CCCC;
     color: black;
     font-size: 20px;
     transition: .3s;
@@ -61,9 +64,42 @@
 #openSidebarButton{
     font-size: 40px;
     margin: 20px;
+    color: #111;
+    text-decoration: none;
+}
+
+.container{
+   width: 100%;
+   height: 100%;
 }
 
 .bodyContent{
-    width: 100%;
-    transition: margin-left 0.5s;
+    transition: margin-left .5s;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.bodyContent>h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+.bodyContent>ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+.bodyContent>ul>li a{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.bodyContent>ul>li a:hover{
+    text-decoration: none;
 }

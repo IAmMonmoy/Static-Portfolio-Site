@@ -15,7 +15,7 @@ closeButton.addEventListener('click',closeButtonClicked);
 function openSidebarButtonClicked()
 {
     document.getElementsByClassName('navbar')[0].style.width = '250px';
-    document.getElementsByClassName('bodyContent')[0].style.marginLeft = '250px';
+    //document.getElementsByClassName('bodyContent')[0].style.marginLeft = '250px';
 }
 
 function closeButtonClicked()
