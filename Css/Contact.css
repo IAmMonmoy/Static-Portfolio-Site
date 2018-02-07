@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #39CCCC;
+}
+
+/*form design*/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Pacifico', cursive
+} 
+ 
+
+ .header{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*design for navigation*/
+.navbar{
+    background-color: #111;
+    margin: 5px;
+    padding: 10px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.navbar>ul li{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar>ul>li a{
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    padding: 20px 30px 20px 30px;
+    margin: 10px 10px 10px 10px;
+    -moz-border-radius: 0 30px 30px 0;
+    -webkit-border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
+}
+
+.navbar>ul>li a:hover{
+    background: #39CCCC;
+    color: black;
+    font-size: 20px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px){
+    .navbar{
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .navbar>ul>li a{
+        font-size: 15px;
+        padding: 10px 15px 10px 15px;
+        margin: 5px 5px 5x 5px;
+    }
+    
+    .navbar>ul>li a:hover{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .navbar{
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .navbar>ul>li a{
+        font-size: 13px;
+        padding: 5px 7px 5px 7px;
+        margin: 5px 5px 5x 5px;
+    }
+    
+    .navbar>ul>li a:hover{
+        font-size: 15px;
+    }
+}
+
