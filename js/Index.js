@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded',function(event){
    
 });
 
+window.addEventListener("touchstart", touchHandler, false);
+
+function touchHandler(event){
+    if(event.touches.length > 1){
+        //the event is multi-touch
+        //you can then prevent the behavior
+        event.preventDefault()
+    }
+}
 
 //for opening and closing navigation start
 var openSidebarButton = document.getElementById("openSidebarButton");
